@@ -1,0 +1,107 @@
+/*all elements in the file*/
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+/*header*/
+header {
+  background-color: #EEEEEE;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1rem 2rem;
+}
+
+header img {
+  margin: .5rem 1.5rem;
+  width: 6rem;
+  height: 6rem;
+}
+
+.links {
+  display: inline-flex;
+  align-items: flex-end;
+  margin-right: 2rem;
+  font-size: 2rem;
+}
+
+.links a {
+  padding-left: 3rem;
+}
+
+/*main*/
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 2rem;
+}
+
+main img {
+  height: 25rem;
+  width: 25rem;
+  border-radius: 50%;
+}
+
+main div div img {
+  height: 32rem;
+  width: 32rem;
+  border-radius: 0;
+  padding: 2rem;
+}
+
+main h1 {
+  text-align: center;
+  font-size: 3rem;
+  margin: 1rem;
+}
+
+main p {
+  padding: 2rem;
+  font-size: 2rem;
+}
+
+.bio, .work, .school {
+  display: flex;
+  align-items: center;
+}
+
+.projects {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding: .2rem;
+}
+
+
+.projects p {
+  font-size: 1.4rem;
+}
+
+
+/*footer*/
+footer {
+  background-color: #EEEEEE;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+footer a, p{
+  margin: 1rem;
+}
+
+footer a {
+  color: blue;
+}
