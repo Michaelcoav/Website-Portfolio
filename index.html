@@ -1,84 +1,168 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Michael Coca-Vargas</title>
-  <link rel="stylesheet" href="style.css">
-</head>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Michael Coca-Vargas Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  </head>
 
-<body>
-  <header>
-    <img src="Images/Logo.png" alt="">
-    <div class="links">
-      <a href="https://github.com/Michaelcoav" target="_blank">Github</a>
-      <a href="#Projects">Projects</a>
-      <a href="#Skills">Skills</a>
-    </div>
-  </header>
-
-  <main>
-    <div class="bio" id="AboutMe">
-      <img class="round-Imgs" src="Images/Me.jpg" alt="">
-      <p>
-        My name is Michael Coca-Vargas I am a student at George Mason University studying computer science.
-        The reason I went into computer science was that as a child I have been in love with video games. 
-        My love for video games is still alive to this day and has me motivated to gain the skills required to 
-        make a video game one day.
-        Leading me to pursue a degree in computer science at George Mason University.
-        Now I have the confidence to do whatever I want in programming.
-      </p>
+  <body>
+    <div class="container">
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="index.html">Michael Coca-Vargas</a>  
+          <div class="col align-items-end links">
+            <a class="navbar-item" href="#skills">Skills</a>
+            <a class="navbar-item" href="https://github.com/Michaelcoav" target="_blank">Github</a>
+            <a class="navbar-item" href="mailto: mcocavar@gmu.edu">Contact</a>
+          </div>
+        </nav>
     </div>
 
-    <div class="work">
-      <img class="round-Imgs" src="Images/Thinkland Logo.jpg" alt="">
-      <p>
-        In the summer of 2021, I began my journey with Thinkland where I began my first class teaching a class. 
-        In my first class, I taught four students the fundamentals of programming in python. 
-        Over the course, I also created my version of fizz buzz that asked for the users' responses. 
-        The students created a version of fizz buzz, using what they learned throughout the course.  
-        I am currently teaching my second course with four students. I have taught them about functions, modules, classes, and inheritance. 
-        I enjoy teaching because it helps me understand the topics more profoundly making me a better programmer.
-      </p>
-    </div>
-
-    <h1 id="Projects">Projects</h1>
-
-    <div class="projects">
-      <h2>Account Manager</h2>
-      <p>
-        This was the first project that I had decided to do on my own.
-        Where I got to learn a new module in Tkinter, and learn more about graphical user interfaces.
-        I also learned about relational SQL in order to be able to store the information in an SQLite3 database using sqllite module.
-        It was a great experience because I got to learn new topics on my own.
-      </p>
-      <div>
-        <img src="Images/CaptchaWindow.PNG" alt="">
-        <img src="Images/PinWindow.PNG" alt="">
-        <img src="Images/AccountWindow.PNG" alt="">
+    <div class="container"> 
+      <div class="row align-items-center">
+        <div class="col-4">
+          <img src="images/headshot.png"  class="" alt="">
+        </div>
+        
+        <div class="col">
+          <p>
+            My name is Michael Coca-Vargas I am a student at George Mason University studying computer science.
+            I began studying computer science because I fell in love with video games at a very young age. 
+            The love for video games lead to begin studying computer science in hopes of making my own video game one day. 
+            My plan is to become a software developer and make contributions to applications that I can be proud of.
+            This is my second attempt at making a Portfolio website, I plan to continue improving it in the future.
+          </p>
+        </div>
       </div>
+    </div>
+
+    <div class="container text-center projects">
+      <h3>Projects</h3>
+      <div class="row align-items-center">
+        <h4>Account Manager</h4>
+
+        <div class="col-4">
+          <img src="images/AccountManager.png"  class="" alt="">
+        </div>
+        
+        <div class="col">
+          <p>
+            The account manager similar to the one made by google that used Python module tkinter, 
+            to build the graphical user interface of the program, and SQLite module to store the name of the account,
+            the username and password on a relational table. It was my first project outside of school where I got to learn
+            about using different python modules.
+          </p>
+        </div>
+      </div>
+
+      <div class="row align-items-center">
+        <h4>Calculator</h4>
+
+        <div class="col-4">
+          <img src="images/Calculator.png"  class="" alt="">
+        </div>
+        
+        <div class="col">
+          <p>
+            The calculator was built again using the Python module tkinter, to build the graphical user interface of the program,
+            and python was used to create the back end functions. The calculator allows the user to perform addition, subtraction,
+            multiplication, and division. It allows you to change the sign of the numbers, add decimals, and delete the most recent 
+            number, decimal, or operator from the calculator. It was my second project using tkinter and I felt much more comfortable
+            building it.
+          </p>
+        </div>
+      </div>
+
+      <div class="row align-items-center">
+        <h4>Tic-Tac-Toe</h4>
+        <div class="col-4">
+          <img src="images/TicTacToe.png"  class="" alt="">
+        </div>
+        
+        <div class="col">
+          <p>
+            Tic-Tac-Toe was built using the Python module PyGame, to build buttons, draw the shapes, and print the text 
+            onto the screen. This was one of my favorite projects because it was very simple and I got to learn about 
+            the PyGame module.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="container skills text-center" id="skills">
+      <h3>Skills</h3>
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col"></th>
+            <th scope="col">Novice</th>
+            <th scope="col">Intermediate</th>
+            <th scope="col">Advanced</th>
+            <th scope="col">Expert</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">Object-Oriented Programming</th>
+            <td>X</td>
+            <td>X</td>
+            <td>X</td>
+            <td></td>
+          </tr>
+          <tr>
+            <th scope="row">Data Structures and Algorithms</th>
+            <td>X</td>
+            <td>X</td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <th scope="row">Front-End</th>
+            <td>X</td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+        </tbody>
+      </table>
+      
+      <div class="row align-items-center" style="padding: 1.5rem;">
+        <h4>Data Structures and Algorithms</h4>
+
+        <p>
+          I am currently taking a data structures class at George Mason University, where I have learned the basics of 
+          data structures along with popular algorithms such as breadth-first search, depth-first search, and 
+          dijkstra algorithm. I will be taking an interview prep course for Code Path over the summer to hone my 
+          understanding and application of data stuctures and algorithms.
+        </p>
+        
+        <h4>Object-Oriented Programming</h4>
+      
+        <p>
+          I have taken a course in Java on Object-Oriented Programming at George Mason where I learned the basics of 
+          Object-Oriented Programming such as classes, fields, methods, and design methods. As well as having to use 
+          that knowledge to build my projects and school projects.
+        </p>
+
+        <h4>Front-End</h4>
+
+        <p>
+          I learned the basics of HTML and CSS in high school for a community college class. I know the main semantics of 
+          vanilla HTML such as headers, body, nav, and divs. For css I learned the box model, how to use flex for positioning, 
+          and styling techniques such as font, color, etc. I then went on to learn the basics of bootstrap on my own to 
+          build this website.
+        </p>
+      </div>    
     </div>
     
-    <div class="projects">
-      <h2>Calculator</h2>
-      <p>
-        This was my second project that I completed for the course that I am currently teaching. 
-        I created it to show the students what they could create using the Tkinter module.
-        I felt that the user interface was better on this project, and used what I learned from my previous project.
-      </p>
-      <div>
-        <img src="Images/Calculator.PNG" alt="">
+
+    <footer class="page-footer font-small">
+      <div class="footer-copyright text-center py-3">
+        © 2022 Michael Coca-Vargas
       </div>
-    </div>
-  </main>
-
-
-  <footer>
-    <p>@Michael Coca-Vargas</p>
-    <a href="tel:5717897694">(571)-789-7694</a>
-    <a href="mailto: mcocavar@gmu.edu">mcocavar@gmu.edu</a>
-    <a href="https://github.com/Michaelcoav" target="_blank">github</a>
-  </footer>
-</body>
+    </footer>
+  </body>
 </html>
